@@ -7,6 +7,7 @@ import Hero from './components/Hero'
 import Benefits from './components/Benefits'
 import Collaboration from './components/Collaboration'
 import Services from './components/Services'
+import Pricing from './components/Pricing'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Benefits title={"Chat Smarter, Not Harder with Brainwave"}/>
       <Collaboration/>
       <Services/>
+      <Pricing/>
     </div>
     <div className=''><ButtonGradient/></div>
     

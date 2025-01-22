@@ -70,19 +70,31 @@ const Services = () => {
                             {brainwaveServicesIcons.map((item, index) => (
                                 <li key={index}
                                     className={`rounded-2xl flex items-center justify-center ${
-                                        index === 2 ? "w-[3rem] h-[3rem] p-0.3 bg-conic-gradient rounded-2xl md:w-[4.5rem] md:h-[4.5rem]" : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                                        index === 2 ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient rounded-2xl md:w-[4.5rem] md:h-[4.5rem]" : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
                                     }`}
                                 >
                                    <div>
-                                    <img src={item}/>
+                                    <img src={item}
+                                    width={24}
+                                    height={24} alt={item} />
                                     </div> 
                                 </li>
                             ))}
                         </ul>
                     </div>
+
+                    <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+                        <img src={service3}
+                        className="w-full h-full object-cover"
+                        width={520}
+                        height={400}
+                        alt="Scary robot"/>
+                        <VideoChatMessage/>
+                        <VideoBar/>
+                    </div>
             </div>
 
-
+            <Gradient/>
         </div>
       </div>
     </Section>
